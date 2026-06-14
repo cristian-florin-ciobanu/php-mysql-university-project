@@ -5,11 +5,11 @@
 <body>
     <a href="admin.php"><- Return</a>
 
-    <h3>Manage Professors</h3>
+    <h3>Manage Students</h3>
     
     <table>
         <tr>
-            <td>ID</td><td>First Name</td><td>Last Name</td><td>Parent Initial</td><td>CNP</td><td>Phone</td><td>Email</td><td>Year</td><td>Group</td><td>Subgroup</td><td>Profile</td><td></td>
+            <td>ID</td><td>First Name</td><td>Last Name</td><td>Parent Initial</td><td>CNP</td><td>Phone</td><td>Email</td><td>Year</td><td>Group</td><td>Subgroup</td><td>Profile</td>
         </tr>
         <tr>
             <form action="admin-manage-students-insert.php">

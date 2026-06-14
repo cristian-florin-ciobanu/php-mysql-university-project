@@ -9,7 +9,7 @@
     
     <table>
         <tr>
-            <td>ID</td><td>Role</td><td>First Name</td><td>Last Name</td><td>Phon e</td><td>Email</td><td></td>
+            <td>ID</td><td>Role</td><td>First Name</td><td>Last Name</td><td>Phon e</td><td>Email</td>
         </tr>
         <tr>
             <form action="admin-manage-professors-insert.php">
