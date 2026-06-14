@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require MAIN_DIR.'/php/connect.php';
 
 $error_message = "Not found.";
 
@@ -13,12 +13,13 @@ function queryRole($role) {
 }
 ?>
 
-<head>
-    <link rel="stylesheet" href="../css/footer.css">
-</head>
+<style type="text/css">
+    <?php include MAIN_DIR.'/css/sections/footer.css'; ?>
+</style>
+
 <div id="footer">
-    <div id="footer-section">
-        <h2>University</h2>
+    <div class="footer-section">
+        <h3>University</h3>
         <?php
         queryRole("Rector");
         queryRole("Rectorate");
@@ -30,5 +31,10 @@ function queryRole($role) {
         queryRole("International Affairs");
         queryRole("Administrative Affairs");
         ?>
+    </div>
+    <div class="footer-section">
+        <h3>Contact</h3>
+        <a href="tel:+40-257-280702">+40-257-280702</a>
+        <a href="mailto:rector@uni.ro">rector@uni.ro</a>
     </div>
 </div>
