@@ -1,5 +1,5 @@
 <?php
-require MAIN_DIR.'/php/connect.php';
+require 'connect.php';
 
 $error_message = "Not found.";
 
@@ -13,9 +13,7 @@ function queryRole($role) {
 }
 ?>
 
-<style type="text/css">
-    <?php include MAIN_DIR.'/css/sections/footer.css'; ?>
-</style>
+<style type="text/css"><?php include 'css/footer.css'; ?></style>
 
 <div id="footer">
     <div class="footer-section">
