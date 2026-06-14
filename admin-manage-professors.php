@@ -3,8 +3,8 @@
     <title>University Admin</title>
 </head>
 <body>
-    <a href=\"admin.php\"><- Return</a><br><br>
-    
+    <a href=\"admin.php\"><- Return</a>
+
     <h3>Manage Professors</h3>
     
     <table>
