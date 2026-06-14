@@ -17,7 +17,7 @@ function queryRole($role) {
 
 <div id="footer">
     <div id="footer-roles">
-        <h3>University</h3>
+        <h3>University of Arad</h3>
         <div id="footer-roles-list">
             <div class="footer-roles-section">
                 <?php queryRole("Rector"); ?>
