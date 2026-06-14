@@ -25,3 +25,14 @@ hr {
     border-radius: 0.2rem;
     width: 20rem;
 }
+
+#news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.news-element {
+    
+}
