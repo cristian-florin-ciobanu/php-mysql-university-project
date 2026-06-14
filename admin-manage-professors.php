@@ -9,10 +9,10 @@
     
     <table>
         <tr>
-            <td>ID</td><td>Role</td><td>First Name</td><td>Last Name</td><td>Phone</td><td>Email</td><td></td>
+            <td>ID</td><td>Role</td><td>First Name</td><td>Last Name</td><td>Phon e</td><td>Email</td><td></td>
         </tr>
         <tr>
-            <form action="admin-manage-professors-add.php">
+            <form action="admin-manage-professors-insert.php">
                 <td></td>
                 <td><input type="text" name="role"></td>
                 <td><input type="text" name="first-name"></td>
@@ -37,7 +37,7 @@
             echo "<td>".$row["Last Name"]."</td>";
             echo "<td>".$row["Phone"]."</td>";
             echo "<td>".$row["Email"]."</td>";
-            echo "<td><form action=\"admin-manage-professors-remove.php\"><input type=\"submit\" name=\"ID\" value=\"".$row["ID"]."\"></form></td>";
+            echo "<td><form action=\"admin-manage-professors-delete.php\"><input type=\"submit\" name=\"ID\" value=\"".$row["ID"]."\"></form></td>";
             echo "</tr>";
         }
         echo "</table>";
