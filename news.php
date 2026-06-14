@@ -4,6 +4,8 @@
 <?php
 include 'header.php';
 
+echo "<h1>News</h1>";
+
 require 'connect.php';
 $result = $connection->query("SELECT `ID`, `Name`, `Text` FROM `news`");
 
