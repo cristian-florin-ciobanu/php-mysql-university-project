@@ -1,14 +1,11 @@
 <?php
-
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "school";
+$database = "university";
 
-$connection = mysqli_connect($servername, $username, $password, $dbname);
+$connection = mysqli_connect($host, $user, $password, $database);
 if (!$connection) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully";
-
 ?>
