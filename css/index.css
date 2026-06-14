@@ -7,3 +7,21 @@ body {
 h1 {
     color: #242424;
 }
+
+#news-header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#news-subheader {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+hr {
+    border: 0.175rem solid #242424;
+    border-radius: 0.2rem;
+    width: 20rem;
+}
