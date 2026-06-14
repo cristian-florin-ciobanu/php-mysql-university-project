@@ -8,7 +8,7 @@ $result = $connection->query("SELECT `ID`, `Name` FROM `profiles`");
 if ($result->num_rows <= 0)
     echo "There are no listed study programmes in the university's database.";
 else {
-    echo "<table><tr> <td>ID</td> <td>Name</td> </tr>";
+    echo "<table><tr> <td>ID</td> <td>Name</td> <td></td> </tr>";
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td>".$row["ID"]."</td>";

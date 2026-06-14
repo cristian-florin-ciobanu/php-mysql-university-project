@@ -8,7 +8,7 @@ $result = $connection->query("SELECT `ID`, `First Name`, `Last Name`, `Parent In
 if ($result->num_rows <= 0)
     echo "There are no listed students in the university's database.";
 else {
-    echo "<table><tr> <td>ID</td> <td>Role</td> <td>First Name</td> <td>Last Name</td> <td>Parent Initial</td> <td>CNP</td> <td>Phone</td> <td>Email</td> </tr> <td>Year</td> <td>Group</td> <td>Subgroup</td> <td>Profile</td> </tr>";
+    echo "<table><tr> <td>ID</td> <td>Role</td> <td>First Name</td> <td>Last Name</td> <td>Parent Initial</td> <td>CNP</td> <td>Phone</td> <td>Email</td> </tr> <td>Year</td> <td>Group</td> <td>Subgroup</td> <td>Profile</td> <td></td> </tr>";
     while ($row = $result->fetch_assoc()) {
         echo "</tr>";
         echo "<td>".$row["ID"]."</td>";

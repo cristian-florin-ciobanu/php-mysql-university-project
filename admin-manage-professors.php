@@ -1,24 +1,50 @@
-<?php
-echo "<a href=\"admin.php\"><- Return</a><br><br>";
-
-echo "<h3>Manage Professors</h3>";
-
-require 'connect.php';
-$result = $connection->query("SELECT `ID`, `Role`, `First Name`, `Last Name`, `Phone`, `Email` FROM `professors`");
-if ($result->num_rows <= 0)
-    echo "There are no listed professors in the university's database.";
-else {
-    echo "<table><tr> <td>ID</td> <td>Role</td> <td>First Name</td> <td>Last Name</td> <td>Phone</td> <td>Email</td> </tr>";
-    while ($row = $result->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>".$row["ID"]."</td>";
-        echo "<td>".$row["Role"]."</td>";
-        echo "<td>".$row["First Name"]."</td>";
-        echo "<td>".$row["Last Name"]."</td>";
-        echo "<td>".$row["Phone"]."</td>";
-        echo "<td>".$row["Email"]."</td>";
-        echo "</tr>";
+<!DOCTYPE html>
+<head>
+    <title>University Admin</title>
+</head>
+<body>
+    <a href=\"admin.php\"><- Return</a><br><br>
+    <h3>Manage Professors</h3>
+    
+    <style type="text/css">
+        form {
+            display: flex;
+        }
+    </style>
+    
+    <table>
+        <tr>
+            <td>ID</td><td>Role</td><td>First Name</td><td>Last Name</td><td>Phone</td><td>Email</td><td></td>
+        </tr>
+        <tr>
+            <form action="">
+                <td></td>
+                <td><input type="text" name="role"></td>
+                <td><input type="text" name="first-name"></td>
+                <td><input type="text" name="last-name"></td>
+                <td><input type="number" name="phone"></td>
+                <td><input type="email" name="email"></td>
+                <td><input type="submit" value="+"></td>
+            </form>
+        </tr>
+    
+    <?php
+    require 'connect.php';
+    $result = $connection->query("SELECT `ID`, `Role`, `First Name`, `Last Name`, `Phone`, `Email` FROM `professors`");
+    if ($result->num_rows <= 0)
+        echo "There are no listed professors in the university's database.";
+    else {
+        while ($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>".$row["ID"]."</td>";
+            echo "<td>".$row["Role"]."</td>";
+            echo "<td>".$row["First Name"]."</td>";
+            echo "<td>".$row["Last Name"]."</td>";
+            echo "<td>".$row["Phone"]."</td>";
+            echo "<td>".$row["Email"]."</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
     }
-    echo "</table>";
-}
-?>
+    ?>
+</body>
