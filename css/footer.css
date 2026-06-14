@@ -1,3 +1,29 @@
 #footer {
-    background: cornflowerblue;
+    display: flex;
+    background: #1b4965;
+    color: #e2e2e2ff;
+    padding: 1rem 0.75rem;
+}
+
+#footer-roles {
+    display: block;
+}
+
+#footer-roles-list {
+    display: flex;
+}
+
+.footer-roles-section {
+    display: block;
+    margin-right: 2rem;
+    color: #e2e2e2ff;
+}
+
+#footer-contact {
+    display: block;
+}
+
+.footer-contact-link {
+    color: #e2e2e2ff;
+    text-decoration: none;
 }

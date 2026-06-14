@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>University</title>
+    <link rel="stylesheet" type="text/css" >
 </head>
 <body>
-    <?php
-    include 'header.php';
-    echo "<h1>University</h1>";
-    echo include 'lorem-ipsum.txt';
-    include 'footer.php';
-    ?>
+    <style type="text/css"><?php include 'css/index.css'; ?></style>
+    <?php include 'header.php'; ?>
+    <h1>University of Arad</h1>
+    <?php include 'footer.php'; ?>
 </body>
