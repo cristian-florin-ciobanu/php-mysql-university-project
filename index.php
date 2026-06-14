@@ -17,7 +17,7 @@
     <hr>
     <?php
         require 'connect.php';
-        $result = $connection->query("SELECT `ID`, `Name`, `Text` FROM `news`");
+        $result = $connection->query("SELECT `ID`, `Title`, `Text` FROM `news`");
         if ($result->num_rows <= 0) {
             echo "There are no news or events.";
         } else {
@@ -27,7 +27,7 @@
                 $news_text = $row["Text"];
                 if (strlen($news_text) > 256)
                     $news_text = substr($news_text, 0, 253)."...";
-                echo "<div class=\"news-element\"><h3>".$row["Name"]."</h3><p>".$news_text."</p></div>";
+                echo "<div class=\"news-element\"><h3>".$row["Title"]."</h3><p>".$news_text."</p></div>";
                 
                 $news_count++;
                 if ($news_count >= 4)
