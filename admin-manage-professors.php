@@ -6,12 +6,6 @@
     <a href=\"admin.php\"><- Return</a><br><br>
     <h3>Manage Professors</h3>
     
-    <style type="text/css">
-        form {
-            display: flex;
-        }
-    </style>
-    
     <table>
         <tr>
             <td>ID</td><td>Role</td><td>First Name</td><td>Last Name</td><td>Phone</td><td>Email</td><td></td>
