@@ -4,6 +4,7 @@
 </head>
 <body>
     <a href=\"admin.php\"><- Return</a><br><br>
+    
     <h3>Manage Professors</h3>
     
     <table>
